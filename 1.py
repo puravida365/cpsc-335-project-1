@@ -63,6 +63,41 @@ def main():
 if __name__ == '__main__':
     main()
 
+'''
+SAMPLE OUTPUT:
+
+$ python 1.py book.txt 100
+Loaded "book.txt" of length 675083
+n = 100
+largest value =  121
+elapsed time = 2.50339508057e-05
+
+$ python 1.py book.txt 2000
+Loaded "book.txt" of length 675083
+n = 2000
+largest char =  125
+elapsed time = 0.000270128250122
+
+$ python 1.py book.txt 10000
+Loaded "book.txt" of length 675083
+n = 10000
+largest char =  125
+elapsed time = 0.00104308128357
+
+$ python 1.py book.txt 600000
+Loaded "book.txt" of length 675083
+n = 600000
+largest char =  195
+elapsed time = 0.0737128257751
+
+$ python 1.py book.txt 675000
+Loaded "book.txt" of length 675083
+n = 675000
+largest char =  195
+elapsed time = 0.0809509754181
+
+'''
+
 # ================= performance measurement ======================
 
 
