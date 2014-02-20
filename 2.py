@@ -20,7 +20,6 @@
 read data from file
 set temp value to first letter of string
 
-
 '''
 
 # ================ mathematical analysis ========================
@@ -33,13 +32,28 @@ set temp value to first letter of string
 import sys
 import time
 
-def longest_oreo(s):
-	max = s[0]
-	for i in s:
-		if i > max:
-			max = i
-	return max
+def max_char(s):
+    max = s[0]
+    for i in s:
+        if i > max:
+            max = i
+    return max
 
+def longest_oreo(s):
+    oreo = s[0]
+    for i in s:
+        if i != oreo:
+            # append i to oreo
+            oreo.join(i)
+        else:
+            # get oreo length
+            oreo_length = len(oreo)
+            max_oreo_length = oreo_length
+
+            # compare to other oreos, return the largest one
+
+    return oreo_length
+			
 def main():
     if len(sys.argv) != 3:
         print('error: you must supply exactly two arguments\n\n' +
@@ -58,10 +72,11 @@ def main():
     assert(len(s) == n)
 
     start = time.perf_counter()
-    x = longest_oreo(s)
+    x = max_char(s)
     end = time.perf_counter()
     print ('largest char = ', ord(x))  
-    print('elapsed time = ' + str(end - start))
+    print ('elapsed time = ' + str(end - start))
+    print ('longest oreo = ', x)
 
 if __name__ == '__main__':
     main()
