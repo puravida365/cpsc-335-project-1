@@ -5,7 +5,7 @@
 # ===============================================================
 # The longest oreo problem is:
 # input: a string s of length n > 0
-# output: the longest nonempty substring u of s such that the
+# output: the longest non-empty substring u of s such that the
 #         first and last characters of u are identical
 # size: n
 # ===============================================================
@@ -16,7 +16,12 @@
 
 
 # ============= Describe algorithm using pseudocode =============
+'''
+read data from file
+set temp value to first letter of string
 
+
+'''
 
 # ================ mathematical analysis ========================
 
@@ -28,7 +33,7 @@
 import sys
 import time
 
-def max_char(s):
+def longest_oreo(s):
 	max = s[0]
 	for i in s:
 		if i > max:
@@ -53,7 +58,7 @@ def main():
     assert(len(s) == n)
 
     start = time.perf_counter()
-    x = max_char(s)
+    x = longest_oreo(s)
     end = time.perf_counter()
     print ('largest char = ', ord(x))  
     #print('x = ' + str(x))
