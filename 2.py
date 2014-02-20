@@ -61,7 +61,6 @@ def main():
     x = longest_oreo(s)
     end = time.perf_counter()
     print ('largest char = ', ord(x))  
-    #print('x = ' + str(x))
     print('elapsed time = ' + str(end - start))
 
 if __name__ == '__main__':
