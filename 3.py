@@ -1,12 +1,13 @@
 # ===============================================================
 # CPSC 335 - Spring 2014
-# PROJECT 1 - QUESTION 1
+# PROJECT 1 - QUESTION 3
 
 # ===============================================================
 # Given:
 # 
 # Input: a string s of length n > 0
-# output: the character c in s with the greatest integer value
+# output: the longest nonempty substring u of s such that u 
+#         appears more than once in s
 # size: n
 #
 # ===============================================================

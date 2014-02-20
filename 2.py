@@ -1,14 +1,13 @@
 # ===============================================================
 # CPSC 335 - Spring 2014
-# PROJECT 1 - QUESTION 1
+# PROJECT 1 - QUESTION 2
 
 # ===============================================================
-# Given:
-# 
-# Input: a string s of length n > 0
-# output: the character c in s with the greatest integer value
+# The longest oreo problem is:
+# input: a string s of length n > 0
+# output: the longest nonempty substring u of s such that the
+#         first and last characters of u are identical
 # size: n
-#
 # ===============================================================
 
 
