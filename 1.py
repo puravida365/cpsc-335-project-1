@@ -17,8 +17,15 @@
 
 
 # ============= Describe algorithm using pseudocode =============
-
-
+'''
+read data from file
+set max value to first character of string
+loop through string of characters
+    compare all characters to max value
+    if character is > max
+        max = new character 
+print results
+'''
 # ================ mathematical analysis ========================
 
 
