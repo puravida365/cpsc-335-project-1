@@ -115,34 +115,54 @@ SAMPLE OUTPUT:
 Loaded "book.txt" of length 675056
 n = 100
 largest char =  121
-elapsed time = 2.1660001948475838e-05
+elapsed time = 1.9249040633440018e-05
 longest oreo = [ e Project Gutenberg EBook of A short history of Rhode Island, by 
 George Washington Greene
 
 This e ]
-elapsed time = 0.0013798469444736838
+elapsed time = 0.0010776080307550728
 longest repeated substring = [ of ]
-elapsed time = 4.416698357090354e-05
+elapsed time = 3.4560973290354013e-05
+
+
+================================================================
+
+Loaded "book.txt" of length 675056
+n = 500
+largest char =  121
+elapsed time = 4.9829017370939255e-05
+longest oreo = [ The Project Gutenberg EBook of A short history of Rhode Island, by 
+George Washington Greene
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: A short history of Rhode Island
+
+Author: George Washington Greene
+
+Release Date: February 18, 2014 [EBook #44955]
+
+Language: English
+
+
+*** START ]
+elapsed time = 0.025699571997392923
+longest repeated substring = [ Washington ]
+elapsed time = 0.0004852869897149503
+
+
 
 ================================================================
 
 
 Loaded "book.txt" of length 675056
-n = 100
-largest char =  121
-elapsed time = 2.1660001948475838e-05
-longest oreo = [ e Project Gutenberg EBook of A short history of Rhode Island, by 
-George Washington Greene
-
-This e ]
-elapsed time = 0.0013798469444736838
-longest repeated substring = [ of ]
-elapsed time = 4.416698357090354e-05
-$ python3 3.py book.txt 2000
-Loaded "book.txt" of length 675056
 n = 2000
 largest char =  125
-elapsed time = 0.00018807995365932584
+elapsed time = 0.0001752949901856482
 longest oreo = [ Gutenberg EBook of A short history of Rhode Island, by 
 George Washington Greene
 
@@ -210,14 +230,9 @@ preparation.
 
        LATE NON-RESIDENT PROFESSOR OF AMERICAN HISTORY IN CORNELL
             UNIVERSITY; AUTHOR OF "THE LIFE OF MAJOR-G ]
-elapsed time = 0.41419019701424986
+elapsed time = 0.41660260601202026
 longest repeated substring = [ Washington ]
-elapsed time = 0.02109081100206822
-
-
-================================================================
-
-
+elapsed time = 0.0209164569969289
 
 
 '''

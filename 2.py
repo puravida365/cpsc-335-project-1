@@ -91,6 +91,136 @@ if __name__ == '__main__':
 SAMPLE OUTPUT:
 
 
+Loaded "book.txt" of length 675056
+n = 100
+largest char =  121
+elapsed time = 1.825898652896285e-05
+longest oreo = [ e Project Gutenberg EBook of A short history of Rhode Island, by 
+George Washington Greene
+
+This e ]
+elapsed time = 0.0010566870332695544
+
+
+================================================================
+
+
+Loaded "book.txt" of length 675056
+n = 500
+largest char =  121
+elapsed time = 5.085696466267109e-05
+longest oreo = [ The Project Gutenberg EBook of A short history of Rhode Island, by 
+George Washington Greene
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: A short history of Rhode Island
+
+Author: George Washington Greene
+
+Release Date: February 18, 2014 [EBook #44955]
+
+Language: English
+
+
+*** START ]
+elapsed time = 0.026056246017105877
+
+================================================================
+
+Loaded "book.txt" of length 675056
+n = 300
+largest char =  121
+elapsed time = 3.232003655284643e-05
+longest oreo = [ he Project Gutenberg EBook of A short history of Rhode Island, by 
+George Washington Greene
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with ]
+elapsed time = 0.009051509958226234
+
+
+================================================================
+
+largest char =  125
+elapsed time = 0.00016040500486269593
+longest oreo = [ Gutenberg EBook of A short history of Rhode Island, by 
+George Washington Greene
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: A short history of Rhode Island
+
+Author: George Washington Greene
+
+Release Date: February 18, 2014 [EBook #44955]
+
+Language: English
+
+
+*** START OF THIS PROJECT GUTENBERG EBOOK A SHORT HISTORY OF RHODE ISLAND ***
+
+
+
+
+Produced by KD Weeks, Charlene Taylor and the Online
+Distributed Proofreading Team at http://www.pgdp.net (This
+file was produced from images generously made available
+by The Internet Archive/American Libraries.)
+
+
+
+
+
+Transcriber's Note
+
+This version of the text is unable to reproduce certain typographic
+features. Italics are delimited with the '_' character as _italic_.
+Superscripts are used in certain period quotations (e.g., y^e), are
+represents, as shown, with the carat character. Should more than one
+character be superscripted, they are enclosed in brackets (e.g.,
+Y^{or}). The 'oe' ligature appears only in the words 'manoeuvring',
+and is rendered as separate characters. Words printed using small
+capitals are shifted to all upper-case.
+
+Footnotes have been relocated to the end of paragraph breaks or tables,
+and are assigned sequential letters.
+
+Please consult the notes at the end of this text for a more detailed
+discussion of any other issues that were encountered during its
+preparation.
+
+
+[Illustration: STATUE OF ROGER WILLIAMS.]
+
+
+
+
+                                   A
+                             SHORT HISTORY
+                                   OF
+                             RHODE ISLAND,
+
+                                   BY
+
+                    GEORGE WASHINGTON GREENE, LL.D.,
+
+       LATE NON-RESIDENT PROFESSOR OF AMERICAN HISTORY IN CORNELL
+            UNIVERSITY; AUTHOR OF "THE LIFE OF MAJOR-G ]
+elapsed time = 0.41027935402235016
+
+
+
 '''
 
 # ================= performance measurement ======================
