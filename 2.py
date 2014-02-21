@@ -44,7 +44,7 @@ def longest_oreo(s):
     for i in s:
         if i != oreo:
             # append i to oreo
-            oreo.join(i)
+            oreo += i
         else:
             # get oreo length
             oreo_length = len(oreo)
@@ -73,10 +73,11 @@ def main():
 
     start = time.perf_counter()
     x = max_char(s)
+    y = longest_oreo(s)
     end = time.perf_counter()
     print ('largest char = ', ord(x))  
     print ('elapsed time = ' + str(end - start))
-    print ('longest oreo = ', x)
+    print ('longest oreo = ', y)
 
 if __name__ == '__main__':
     main()
