@@ -40,19 +40,27 @@ def max_char(s):
     return max
 
 def longest_oreo(s):
-    oreo = s[0]
-    for i in s:
-        if i != oreo:
-            # append i to oreo
-            oreo += i
-        else:
-            # get oreo length
-            oreo_length = len(oreo)
-            max_oreo_length = oreo_length
 
-            # compare to other oreos, return the largest one
-
-    return oreo_length
+    u = []
+    maxx = 0
+    first = 0
+    last = 0
+    size = 0
+    for ind1,char1 in enumerate(s):
+        start = ind1
+        for ind2,char2 in enumerate(s[ind1:]):
+            if char2 is char1:
+                start = ind1
+                end = ind2 + start
+                size = end - start
+        if maxx < size:
+            maxx = size
+            first = start
+            last = end + 1
+    u = s[first:last]
+    
+    print(u)
+    #return u
 			
 def main():
     if len(sys.argv) != 3:
@@ -77,7 +85,7 @@ def main():
     end = time.perf_counter()
     print ('largest char = ', ord(x))  
     print ('elapsed time = ' + str(end - start))
-    print ('longest oreo = ', y)
+    print ('longest oreo = [', y, ']')
 
 if __name__ == '__main__':
     main()
