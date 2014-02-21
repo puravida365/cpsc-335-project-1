@@ -1,11 +1,7 @@
-def oreo(s):
-    for i in range(0,len(s)):
-        for x in range(1,len(s)):
-            if s[i] == s[x]:
-                length = (x-i) + 1
-                if length > mainLength: 
-                    mainLength = length
-                    start = i
-                    end = x 
-                    
-        x=i+1
+text = "This eBook is for the time is better is here for"
+
+words = (text.split( ))
+
+for i in words
+    if words[i] = words 
+#print (words[0])

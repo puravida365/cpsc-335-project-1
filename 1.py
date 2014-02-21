@@ -73,33 +73,6 @@ if __name__ == '__main__':
 '''
 SAMPLE OUTPUT:
 
-with python 2 with time.time()
-
-    $ python 1.py book.txt 100
-    Loaded "book.txt" of length 675083
-    n = 100
-    largest value =  121
-    elapsed time = 2.50339508057e-05
-
-    $ python 1.py book.txt 675000
-    Loaded "book.txt" of length 675083
-    n = 675000
-    largest char =  195
-    elapsed time = 0.0809509754181
-
-with python 3 with time_perf()
-
-    $ python3 1.py book.txt 100
-    Loaded "book.txt" of length 675056
-    n = 100
-    largest char =  121
-    elapsed time = 1.876999158412218e-05
-
-    $ python3 1.py book.txt 675000
-    Loaded "book.txt" of length 675056
-    n = 675000
-    largest char =  246
-    elapsed time = 0.04807819298002869
 
 '''
 

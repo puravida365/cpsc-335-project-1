@@ -31,11 +31,44 @@ import sys
 import time
 
 def max_char(s):
-	max = s[0]
-	for i in s:
-		if i > max:
-			max = i
-	return max
+    max = s[0]
+    for i in s:
+        if i > max:
+            max = i
+    return max
+
+def longest_oreo(s):
+    mainLength = 0
+    startL = 0
+    endL = 0
+    for i in range(0,len(s)):
+        for x in range(i+1,len(s)):
+            if s[i] == s[x] and s[x] != ' ':
+                length = (x-i) + 1
+                if length > mainLength: 
+                    mainLength = length
+                    startL = i
+                    endL = x 
+                    
+    oreoString = s[startL:endL+1]
+    return(oreoString)
+
+def duplicate_list(g):
+    CurrentSize = 0
+    LargestSize = 0
+    DuplicateValue = " "
+  
+
+    for i in range(0,len(g)):
+        for x in range(i+1,len(g)):        
+            if g[i] == g[x] and g[x] != ' ':
+                CurrentSize = len(g[i])
+                if CurrentSize > LargestSize:
+                    DuplicateValue = g[i]
+                    LargestSize = CurrentSize
+
+    return DuplicateValue         
+
 
 def main():
     if len(sys.argv) != 3:
@@ -45,21 +78,33 @@ def main():
 
     filename = sys.argv[1]
     n = int(sys.argv[2])
-
+    m = n
     entire_file = open(filename).read()
     print('Loaded "' + filename + '" of length ' + str(len(entire_file))) 
     print ('n =', n)
 
     # take only the first n characters of entire_file
     s = entire_file[:n]
+    g = entire_file[:m].split(" ")
+
     assert(len(s) == n)
 
-    start = time.perf_counter()
+    start1 = time.perf_counter()
     x = max_char(s)
-    end = time.perf_counter()
+    end1 = time.perf_counter()
+    start2 = time.perf_counter()
+    y = longest_oreo(s)
+    end2 = time.perf_counter()
+    start3 = time.perf_counter()
+    z = duplicate_list(g)
+    end3 = time.perf_counter()
+    
     print ('largest char = ', ord(x))  
-    #print('x = ' + str(x))
-    print('elapsed time = ' + str(end - start))
+    print ('elapsed time = ' + str(end1 - start1))
+    print ('longest oreo = [', y, ']')
+    print ('elapsed time = ' + str(end2 - start2))
+    print ('longest repeated substring = [', z, ']')
+    print ('elapsed time = ' + str(end3 - start3))
 
 if __name__ == '__main__':
     main()
@@ -67,33 +112,7 @@ if __name__ == '__main__':
 '''
 SAMPLE OUTPUT:
 
-with python 2 with time.time()
 
-    $ python 1.py book.txt 100
-    Loaded "book.txt" of length 675083
-    n = 100
-    largest value =  121
-    elapsed time = 2.50339508057e-05
-
-    $ python 1.py book.txt 675000
-    Loaded "book.txt" of length 675083
-    n = 675000
-    largest char =  195
-    elapsed time = 0.0809509754181
-
-with python 3 with time_perf()
-
-    $ python3 1.py book.txt 100
-    Loaded "book.txt" of length 675056
-    n = 100
-    largest char =  121
-    elapsed time = 1.876999158412218e-05
-
-    $ python3 1.py book.txt 675000
-    Loaded "book.txt" of length 675056
-    n = 675000
-    largest char =  246
-    elapsed time = 0.04807819298002869
 
 '''
 
