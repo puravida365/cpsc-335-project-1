@@ -40,27 +40,20 @@ def max_char(s):
     return max
 
 def longest_oreo(s):
-
-    u = []
-    maxx = 0
-    first = 0
-    last = 0
-    size = 0
-    for ind1,char1 in enumerate(s):
-        start = ind1
-        for ind2,char2 in enumerate(s[ind1:]):
-            if char2 is char1:
-                start = ind1
-                end = ind2 + start
-                size = end - start
-        if maxx < size:
-            maxx = size
-            first = start
-            last = end + 1
-    u = s[first:last]
-    
-    print(u)
-    #return u
+    mainLength = 0
+    startL = 0
+    endL = 0
+    for i in range(0,len(s)):
+        for x in range(i+1,len(s)):
+            if s[i] == s[x]:
+                length = (x-i) + 1
+                if length > mainLength: 
+                    mainLength = length
+                    startL = i
+                    endL = x 
+                    
+    oreoString = s[startL:endL+1]
+    return(oreoString)
 			
 def main():
     if len(sys.argv) != 3:
