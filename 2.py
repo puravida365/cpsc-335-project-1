@@ -45,7 +45,7 @@ def longest_oreo(s):
     endL = 0
     for i in range(0,len(s)):
         for x in range(i+1,len(s)):
-            if s[i] == s[x]:
+            if s[i] == s[x] and s[x] != ' ':
                 length = (x-i) + 1
                 if length > mainLength: 
                     mainLength = length
@@ -85,6 +85,56 @@ if __name__ == '__main__':
 
 '''
 SAMPLE OUTPUT:
+
+$ python3 2.py book.txt 100
+Loaded "book.txt" of length 675056
+n = 100
+largest char =  121
+elapsed time = 0.0010750539950095117
+longest oreo = [ e Project Gutenberg EBook of A short history of Rhode Island, by 
+George Washington Greene
+
+This e ]
+$ 
+
+===========================================================
+
+$ python3 2.py book.txt 10
+Loaded "book.txt" of length 675056
+n = 10
+largest char =  114
+elapsed time = 3.6934041418135166e-05
+longest oreo = [ e Proje ]
+$ 
+
+===========================================================
+
+$ python3 2.py book.txt 500
+Loaded "book.txt" of length 675056
+n = 500
+largest char =  121
+elapsed time = 0.02722752100089565
+longest oreo = [ The Project Gutenberg EBook of A short history of Rhode Island, by 
+George Washington Greene
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: A short history of Rhode Island
+
+Author: George Washington Greene
+
+Release Date: February 18, 2014 [EBook #44955]
+
+Language: English
+
+
+*** START ]
+$ 
+
 
 
 '''
